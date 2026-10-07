@@ -1,0 +1,15 @@
+node_modules/
+
+# Credentials: no .env file is ever committed.
+.env
+.env.*
+!.env.example
+
+# Certificates and private keys
+*.pfx
+*.pem
+*.key
+
+*.log
+*.jsonl
+.DS_Store

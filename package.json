@@ -1,0 +1,29 @@
+{
+  "name": "guarded-postgres-mcp",
+  "version": "1.1.0",
+  "description": "MCP server that gives AI agents governed access to a legacy ERP PostgreSQL database: query, guarded execute, atomic transactions and table snapshots",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "guarded-postgres-mcp": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test test/*.test.js",
+    "test-conn": "node src/test-conn.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "dotenv": "^17.4.2",
+    "pg": "^8.21.0"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "author": "Raphael Jordão",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raphaeljordao86/guarded-postgres-mcp.git"
+  }
+}
